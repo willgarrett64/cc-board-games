@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*#region Cover*/
+#cover-section {
+ width: 100%
+}
+
+#cover-section img {
+    width: 100%;
+    
+}
+
+/*#endregion*/
+
+
+
+
+
+/*#region Trending*/
+
+.trending {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.trending img {
+    width: 100%;
+}
+
+/*#endregion*/
