@@ -6,7 +6,9 @@
 
 
 
+
 /*#region Cover*/
+
 #cover-section {
  width: 100%
 }
@@ -24,11 +26,24 @@
 
 /*#region Trending*/
 
-.trending {
-    width: 90%;
-    margin: 10px auto;
+.side-scroll-container {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow: auto;
+    padding: 8px;
 }
 
+
+.trending {
+    flex: 0 0 auto;
+    width: 40vh;
+    margin: 10px auto;
+    margin: 0px 3px;
+}
+
+.last {
+    padding-right: 5px;
+}
 .trending img {
     width: 100%;
 }
