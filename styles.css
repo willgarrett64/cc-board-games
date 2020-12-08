@@ -5,27 +5,7 @@
 
 
 
-
-
-/*#region Cover*/
-
-#cover-section {
- width: 100%
-}
-
-#cover-section img {
-    width: 100%;
-    
-}
-
-/*#endregion*/
-
-
-
-
-
-/*#region Trending*/
-
+/*#region Horizontal Scroll Areas*/
 .side-scroll-container {
     display: flex;
     flex-wrap: nowrap; 
@@ -33,19 +13,72 @@
     padding: 8px;
 }
 
-
-.trending {
+.scroll-item {
     flex: 0 0 auto;
     width: 40vh;
     margin: 10px auto;
     margin: 0px 3px;
+    box-sizing: content-box;
 }
 
-.last {
+.scroll-item:last-child {
     padding-right: 5px;
 }
+
+/*#endregion*/
+
+
+
+/*#region Cover*/
+#cover-section {
+    width: 100%;
+    position: relative;
+    
+}
+
+#cover-section img {
+    width: 100%;
+    
+}
+
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-overlay h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    width: fit-content;
+    transform: translate(-50%, -50%);
+}
+/*#endregion*/
+
+
+
+
+/*#region Trending*/
 .trending img {
     width: 100%;
 }
 
+/*#endregion*/
+
+
+
+/*#region Events*/
+.next-event {
+}
+
+.next-event img {
+    width: 100%;
+}
 /*#endregion*/

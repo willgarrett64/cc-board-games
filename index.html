@@ -9,21 +9,21 @@
     <title>CC Board Games</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>About</li>
-                <li>Events</li>
-                <li>GameSwap</li>
-                <li>Log in</li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li>About</li>
+            <li>Events</li>
+            <li>GameSwap</li>
+            <li>Log in</li>
+        </ul>
+    </nav>
     <main>
-        <section id="cover-section">
+        <header id="cover-section">
             <img src="./resources/images/cover/board-game-mix.jpg" alt="mix of board games and pieces">
-            <h1>CC Board Games</h1>
-        </section>
+            <div class="header-overlay">
+                <h1>CC Board Games</h1>
+            </div>
+        </header>
         <hr>
         <section id="about-section">
             <h2>What We're All About</h2>
@@ -37,22 +37,28 @@
         <article id="trending-section">
             <h2>Trending Games</h2>
             <div class="side-scroll-container">
-                <section id="ticket-to-ride-trending" class="trending">
+                <section id="ticket-to-ride" class="trending scroll-item">
                     <figure>
                         <h3>Ticket To Ride</h3>
                         <img src="./resources/images/game-of-week/ticket-to-ride.jfif" alt="ticket to ride boardgame">
+                        <p>All aboard! Ticket to Ride is a cross-country train adventure in which players collect and play matching train cards to claim railway routes connecting cities.</p>
+                        <button>Learn more</button>
                     </figure>
                 </section>  
-                <section id="chess-trending" class="trending">
+                <section id="chess" class="trending scroll-item">
                     <figure>
                         <h3>Chess</h3>
                         <img src="./resources/images/game-of-week/chess.jfif" alt="chess board">
+                        <p>Thanks in part to the hugely popular Netflix show, The Queen's Gambit, the classic board game Chess has made an impressive comeback into the mainstream.</p>
+                        <button>Learn more</button>
                     </figure>
                 </section>  
-                <section id="pandemic-trending" class="trending last">
+                <section id="pandemic" class="trending scroll-item last">
                     <figure>
                         <h3>Pandemic</h3>
                         <img src="./resources/images/game-of-week/pandemic.jpg" alt="pandemic board game">
+                        <p>A deadly virus has broken out and is spreading fast (sound familiar?), so work together as a team against the board to research a cure and bring it under control before it's too late.</p>
+                        <button>Learn more</button>
                     </figure>
                 </section>  
             </div>
@@ -60,8 +66,17 @@
         <hr>
         <article id="events-section">
             <h2>Upcoming Events</h2>
-            <section></section>
-            <section></section>
+            <div class="side-scroll-container">
+                <section class="next-event scroll-item">
+                    <img src="./resources/images/game-of-week/ticket-to-ride.jfif" alt="">
+                </section>
+                <section class="next-event scroll-item">
+                    <img src="./resources/images/game-of-week/ticket-to-ride.jfif" alt="">
+                </section>
+                <section class="next-event scroll-item last">
+                    <img src="./resources/images/game-of-week/ticket-to-ride.jfif" alt="">
+                </section>
+            </div>
         </article>
         <hr>
         <article id="game-swap-section">
