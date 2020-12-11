@@ -10,11 +10,21 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li>About</li>
-            <li>Events</li>
-            <li>GameSwap</li>
-            <li>Log in</li>
+        <ul class="nav nav-tabs">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">About</a>
+                    <a class="dropdown-item" href="#">Games</a>
+                    <a class="dropdown-item" href="#">Upcoming Events</a>
+                    <a class="dropdown-item" href="#">GameSwap</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Members Area</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Log In</a>
+            </li>
         </ul>
     </nav>
     <main>
@@ -25,14 +35,15 @@
             </div>
         </header>
         <section id="about-section">
-            <h2>What We're All About</h2>
+            <h2 class="section-header">What We're All About</h2>
+            <p>Being a board game lover myself, I always found myself looking forward to Christmas to get the family together and finally get to play some games. However, it was always short-lived as after just a day or two of being together, I head back home and I'm back to not knowing when will the next time will be that I get to play. <br><br>
+            This lead to CC Board Games being born - a club for board game lovers from around the country to get together, meet up and play. We mix things up, playing some of the favourites as well as some of the lesser-known ones. <br><br>
+            Given the coronavirus pandemic, we've had to adapt and found inventive ways to play online until things get back to relative normailty and we can all meet up in person again. 
+            </p>
         </section>
-        <section id="review-section">
-            <p id="review">QUOTE</p>
-            <p id="review-by">by XYZ</p>
-        </section>
+        <hr>
         <article id="trending-section">
-            <h2>Trending Games</h2>
+            <h2 class="section-header">Trending Games</h2>
             <div class="side-scroll-container">
                 <section id="ticket-to-ride" class="trending scroll-item">
                     <figure>
@@ -41,7 +52,7 @@
                         <div class="overlay"></div>
                     </figure>
                     <p>All aboard! Ticket to Ride is a cross-country train adventure in which players collect and play matching train cards to claim railway routes connecting cities.</p>
-                    <button>Learn more</button>
+                    <a class="btn btn-info" href="">Learn more</a>
                 </section>  
                 <section id="chess" class="trending scroll-item">
                     <figure>
@@ -50,7 +61,7 @@
                         <div class="overlay"></div>
                     </figure>
                     <p>Thanks in part to the hugely popular Netflix show, The Queen's Gambit, the classic board game Chess has made an impressive comeback into the mainstream.</p>
-                    <button>Learn more</button>
+                    <a class="btn btn-info" href="">Learn more</a>
                 </section>  
                 <section id="pandemic" class="trending scroll-item">
                     <figure>
@@ -59,28 +70,79 @@
                         <div class="overlay"></div>
                     </figure>
                     <p>A deadly virus has broken out and is spreading fast (sound familiar?), so work together against the board to research a cure and end the spread.</p>
-                    <button>Learn more</button>
+                    <a class="btn btn-info" href="">Learn more</a>
                 </section>  
             </div>
         </article>
+        <section id="review-section">
+            <div class="overlay">
+                <p id="review">"I've really loved meeting new people and having a great time playing new games"</p>
+                <p id="review-by">Richard Giles, member</p>
+            </div>
+        </section>
         <article id="events-section">
-            <h2>Upcoming Events</h2>
+            <h2 class="section-header">Upcoming Events</h2>
             <div class="side-scroll-container">
-                <section class="next-event scroll-item">
-                    <img src="./resources/images/game-of-week/ticket-to-ride.jfif" alt="">
+                <section class="next-event scroll-item card">
+                    <img src="./resources/images/events/pyro.jfif" class ="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">What did you get for Christmas?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">7.00pm, Tue 5th Jan</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Online Event</h6>
+                        <p class="card-text">Did you get any new games for Christmas? Bring them along so we can all try out some new games.</p>
+                        <a href="#" class="card-link">Sign me up!</a>
+                    </div>
                 </section>
-                <section class="next-event scroll-item">
-                    <img src="./resources/images/game-of-week/ticket-to-ride.jfif" alt="">
+                <section class="next-event scroll-item card">
+                    <img src="./resources/images/events/monopoly.jfif" class ="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Childhood Favourites</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">7.30pm, Mon 11th Jan</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Online Event</h6>
+                        <p class="card-text">A trip down memory lane as we rummage in the back of the cupboard for those family favourites that we all played growing up.</p>
+                        <a href="#" class="card-link">Sign me up!</a>
+                    </div>
                 </section>
-                <section class="next-event scroll-item">
-                    <img src="./resources/images/game-of-week/ticket-to-ride.jfif" alt="">
+                <section class="next-event scroll-item card">
+                    <img src="./resources/images/events/chess.jfif" class ="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Chess Club</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">6pm, Wed 13th Jan</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Online Event</h6>
+                        <p class="card-text">Our fortnightly chess club is back with its first session of the new year. Beginners through to Grand Masters welcome.</p>
+                        <a href="#" class="card-link">Sign me up!</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </section>
+                <section class="next-event scroll-item card">
+                    <img src="./resources/images/events/cards.jfif" class ="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Games Night</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">7.30pm, Fri 22nd Jan</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Online Event</h6>
+                        <p class="card-text">Get your poker face on, it's cards night! With a variety of games going on, from poker to snap, we've got it all!</p>
+                        <a href="#" class="card-link">Sign me up!</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </section>
+                <section class="next-event scroll-item card">
+                    <img src="./resources/images/events/chess2.jfif" class ="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Chess Club</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">6pm, Wed 27th Jan</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Online Event</h6>
+                        <p class="card-text">Join us for our fortnightly Chess Club meet-up. We have members across all abilities, so don't be shy to drop in.</p>
+                        <a href="#" class="card-link">Sign me up!</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
                 </section>
             </div>
         </article>
+        <hr>
         <article id="game-swap-section">
-            <h2>GameSwap</h2>
-            <p>Do you have a wishlist of board games that you've always wanted to play, but maybe can't find them or can't afford them? <br>
-            Our GameSwap initiative is a way for our members to switch games with each other for a period, have a blast playing something new with your friends and family, and then switch back later. <br>
+            <h2 class="section-header">GameSwap</h2>
+            <p>Do you have a wishlist of board games that you've always wanted to play, but maybe can't find them or can't afford them? <br><br>
+            Our GameSwap initiative is a way for our members to switch games with each other for a period, have a blast playing something new with your friends and family, and then switch back later. <br><br>
             <a href="#">Wow, tell me more!</a>
             </p>
         </article>

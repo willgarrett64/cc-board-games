@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: rgb(242, 242, 248)
+}
+
+.section-header {
+    text-align: center;
+    margin: 10px auto;
+}
+
 
 
 
@@ -12,11 +24,16 @@
     overflow: auto;
 }
 
+.side-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
 .scroll-item {
     flex: 0 0 auto;
     width: 65vw;
     box-sizing: content-box;
     margin: 5px;
+    background-color: white;
 }
 
 .side-scroll-container::after {
@@ -32,16 +49,24 @@
 /*#endregion*/
 
 
+/*#region NavBar*/
+
+
+nav ul {
+    justify-content: space-between;
+}
+/*endregion*/
+
 
 /*#region Cover*/
 #cover-section {
-    width: 100%;
+    height: calc(100vh - 42px);
     position: relative;
+    overflow: hidden;
 }
 
 #cover-section img {
-    width: 100%;
-    
+    height: 100%;    
 }
 
 .header-overlay {
@@ -55,6 +80,9 @@
 }
 
 .header-overlay h1 {
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
     color: white;
     position: absolute;
     top: 50%;
@@ -65,12 +93,28 @@
 }
 /*#endregion*/
 
+/*#region About*/
+#about-section {
 
+}
+
+#about-section p {
+    padding: 0rem 1rem;
+}
+/*#endregion*/
 
 
 /*#region Trending*/
+.trending {
+    min-width: 250px;
+    margin: 5px;
+    border-radius: 10px;
+    border: grey solid 1px;
+}
+
 .trending figure {
     position: relative;
+    margin-bottom: 0;
 }
 
 .trending .overlay {
@@ -81,16 +125,21 @@
     z-index: 2;
     width: 100%;
     height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 
 .trending img {
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .trending h3 {
     position: absolute;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     width: fit-content;
     top: 50%;
     left: 50%;
@@ -99,15 +148,62 @@
 }
 
 .trending p {
-    text-align: justify;
-    margin: 0rem 0.4rem;
+    font-size: 0.9rem;
+    margin: 0.4rem;
+}
+
+.trending .btn {
+    margin: 0.4rem auto;
+    display: block;
+    width: fit-content;
 }
 /*#endregion*/
 
 
+/*#region Quote*/
+#review-section {
+    background-image: url("https://images.unsplash.com/photo-1589804845133-49b5e06cc415?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 35vh;
+    position: relative;
+    margin: 10px 0;
+}
+
+#review-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#review-section p {
+    font-weight: bold;
+    color: white;
+}
+
+#review {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.5rem;
+
+}
+
+#review-by {
+    text-align: right;
+    padding: 10px;
+    font-size: 1.0rem;
+}
+/*#endregion*/
 
 /*#region Events*/
 .next-event {
+    width: 80vw;
 }
 
 .next-event img {
